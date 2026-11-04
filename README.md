@@ -2,6 +2,14 @@
 
 OSPTEK 开发板 · ESP32-S3 主控 · 3.13″ 376 × 960 RGB TFT 彩屏 · 语音识别 / 唤醒
 
+<p align="center">
+  <img src="docs/images/banner.png" alt="OSPTEK ESP32-S3-313LCD AI 语音彩屏开发板" width="100%">
+</p>
+
+<p align="center">
+  <b>简体中文</b> &nbsp;|&nbsp; <a href="README_EN.md">English</a>
+</p>
+
 ## 简介
 
 ESP32-S3-313LCD 是一款搭载 ESP32-S3-WROOM-1-N16R8 模组（2.4 GHz Wi-Fi + BLE 5）的开发板，集成 16 MB Flash 和 8 MB PSRAM，板载 3.13 英寸 376 × 960 分辨率 RGB 接口 TFT 彩屏（GC9503V 驱动），配合 ES8311 音频编解码芯片和板载麦克风，支持语音识别和近 / 远场语音唤醒。
@@ -9,6 +17,10 @@ ESP32-S3-313LCD 是一款搭载 ESP32-S3-WROOM-1-N16R8 模组（2.4 GHz Wi-Fi + 
 本仓库面向二次开发，提供基于 ESP-IDF 的示例代码和硬件资料。
 
 ## 硬件规格
+
+<p align="center">
+  <img src="docs/images/board_callouts.png" alt="ESP32-S3-313LCD 主要组件" width="100%">
+</p>
 
 | 项目 | 参数 |
 | :--- | :--- |
@@ -51,7 +63,7 @@ ESP32-S3-313LCD 是一款搭载 ESP32-S3-WROOM-1-N16R8 模组（2.4 GHz Wi-Fi + 
 | DE | 15 | R1 | 8 | B1 | 21 |
 | BLK（背光） | 4 | R0 | 19 | B0 | 47 |
 | | | G5 | 20 | | |
-| | | G4 | 待确认¹ | | |
+| | | G4 | 3 | | |
 | | | G3 | 46 | | |
 | | | G2 | 9 | | |
 | | | G1 | 10 | | |
@@ -64,8 +76,6 @@ LCD 初始化使用模拟 SPI（与 RGB 数据线复用）：
 | SPI MOSI | 16 |
 | SPI CLK | 17 |
 | SPI CS | 48 |
-
-¹ 厂家使用指南（2025.1.22 版）中 G4 的引脚号缺失，需对照原理图确认。
 
 RGB 屏占用了大量引脚，可用 GPIO 非常紧张。
 
@@ -91,7 +101,10 @@ RGB 屏占用了大量引脚，可用 GPIO 非常紧张。
 
 ## AI 对话例程
 
-板卡的 AI 对话固件基于开源项目 [78/xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) 修改，添加了 GC9503V RGB 屏幕驱动，厂家分支见 [Kevincoooool/xiaozhi-esp32 @ yuying_3.13_lcd](https://gitee.com/Kevincoooool/xiaozhi-esp32/tree/yuying_3.13_lcd/)。
+本开发板使用的 AI 对话基于虾哥开源的源码基础上改动而来，请尊重开源，不要倒卖源码，开源地址为：
+https://github.com/78/xiaozhi-esp32
+
+本开发板的源码地址为：https://gitee.com/Kevincoooool/xiaozhi-esp32/tree/yuying_3.13_lcd
 
 1. 编译烧录后重启，设备进入配网模式。
 2. 手机连接 `Xiaozhi` 开头的热点，浏览器打开 `192.168.4.1`，填写 Wi-Fi 名称和密码。
