@@ -1,9 +1,9 @@
-# ESP32-S3-313LCD 语音彩屏开发板
+# ESP32-S3-313LCD 语音彩屏开发套件
 
-OSPTEK 开发板 · ESP32-S3 主控 · 3.13″ 376 × 960 RGB TFT 彩屏 · 语音识别 / 唤醒
+OSPTEK 开发套件 · ESP32-S3 主控 · 3.13″ 376 × 960 RGB TFT 彩屏 · 语音识别 / 唤醒
 
 <p align="center">
-  <img src="docs/images/banner.png" alt="OSPTEK ESP32-S3-313LCD AI 语音彩屏开发板" width="100%">
+  <img src="docs/images/banner.png" alt="OSPTEK ESP32-S3-313LCD AI 语音彩屏开发套件" width="100%">
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@ OSPTEK 开发板 · ESP32-S3 主控 · 3.13″ 376 × 960 RGB TFT 彩屏 · 语�
 
 ## 简介
 
-ESP32-S3-313LCD 是一款搭载 ESP32-S3-WROOM-1-N16R8 模组（2.4 GHz Wi-Fi + BLE 5）的开发板，集成 16 MB Flash 和 8 MB PSRAM，板载 3.13 英寸 376 × 960 分辨率 RGB 接口 TFT 彩屏（GC9503V 驱动），配合 ES8311 音频编解码芯片和板载麦克风，支持语音识别和近 / 远场语音唤醒。
+ESP32-S3-313LCD 是一款以 ESP32-S3-WROOM-1-N16R8 模组（2.4 GHz Wi-Fi + BLE 5）为主控的开发套件，集成 16 MB Flash 和 8 MB PSRAM，板载 3.13 英寸 376 × 960 分辨率 RGB 接口 TFT 彩屏（GC9503V 驱动），配合 ES8311 音频编解码芯片和板载麦克风，支持语音识别和近 / 远场语音唤醒。
 
 本仓库面向二次开发，提供基于 ESP-IDF 的示例代码和硬件资料。
 
@@ -94,17 +94,17 @@ RGB 屏占用了大量引脚，可用 GPIO 非常紧张。
 ### 硬件连接
 
 1. （可选）将扬声器接到扬声器输出接口。
-2. 用 USB 数据线连接电脑与开发板（注意使用可传输数据的线）。
+2. 用 USB 数据线连接电脑与开发套件（注意使用可传输数据的线）。
 3. 打开电源开关，电源指示灯亮起。
 
 > 如使用锂电池，请选用带保护电路的电池。
 
 ## AI 对话例程
 
-本开发板使用的 AI 对话基于虾哥开源的源码基础上改动而来，请尊重开源，不要倒卖源码，开源地址为：
+本开发套件使用的 AI 对话基于虾哥开源的源码基础上改动而来，请尊重开源，不要倒卖源码，开源地址为：
 https://github.com/78/xiaozhi-esp32
 
-本开发板的源码地址为：https://gitee.com/Kevincoooool/xiaozhi-esp32/tree/yuying_3.13_lcd
+本开发套件的源码地址为：https://gitee.com/Kevincoooool/xiaozhi-esp32/tree/yuying_3.13_lcd
 
 1. 编译烧录后重启，设备进入配网模式。
 2. 手机连接 `Xiaozhi` 开头的热点，浏览器打开 `192.168.4.1`，填写 Wi-Fi 名称和密码。

@@ -1,9 +1,9 @@
-# ESP32-S3-313LCD AI Voice Display Dev Board
+# ESP32-S3-313LCD AI Voice Display Dev Kit
 
-OSPTEK dev board · ESP32-S3 · 3.13″ 376 × 960 RGB TFT · Speech recognition / wake word
+OSPTEK dev kit · ESP32-S3 · 3.13″ 376 × 960 RGB TFT · Speech recognition / wake word
 
 <p align="center">
-  <img src="docs/images/banner_en.png" alt="OSPTEK ESP32-S3-313LCD AI Voice Display Dev Board" width="100%">
+  <img src="docs/images/banner_en.png" alt="OSPTEK ESP32-S3-313LCD AI Voice Display Dev Kit" width="100%">
 </p>
 
 <p align="center">
@@ -12,9 +12,9 @@ OSPTEK dev board · ESP32-S3 · 3.13″ 376 × 960 RGB TFT · Speech recognition
 
 ## Overview
 
-ESP32-S3-313LCD is a development board built around the ESP32-S3-WROOM-1-N16R8 module (2.4 GHz Wi-Fi + BLE 5) with 16 MB Flash and 8 MB PSRAM. It carries a 3.13-inch 376 × 960 RGB-interface TFT display (GC9503V driver), an ES8311 audio codec and an on-board microphone, supporting speech recognition and near / far-field wake word detection.
+ESP32-S3-313LCD is a development kit built around the ESP32-S3-WROOM-1-N16R8 module (2.4 GHz Wi-Fi + BLE 5) with 16 MB Flash and 8 MB PSRAM. It carries a 3.13-inch 376 × 960 RGB-interface TFT display (GC9503V driver), an ES8311 audio codec and an on-board microphone, supporting speech recognition and near / far-field wake word detection.
 
-This repository is intended for development on the board and provides ESP-IDF examples and hardware documentation.
+This repository is intended for development on the kit and provides ESP-IDF examples and hardware documentation.
 
 ## Hardware
 
@@ -94,19 +94,19 @@ The RGB display uses most of the pins, so free GPIOs are very limited.
 ### Hardware Setup
 
 1. (Optional) Connect a speaker to the speaker connector.
-2. Connect the board to your computer with a USB data cable (charge-only cables won't work).
+2. Connect the kit to your computer with a USB data cable (charge-only cables won't work).
 3. Turn on the power switch; the power LED lights up.
 
 > If you use a Li-ion battery, make sure it has a built-in protection circuit.
 
 ## AI Chat Example
 
-The AI chat on this board is modified from the open-source code by Xiage (虾哥). Please respect open source and do not resell the source code. The original open-source project:
+The AI chat on this kit is modified from the open-source code by Xiage (虾哥). Please respect open source and do not resell the source code. The original open-source project:
 https://github.com/78/xiaozhi-esp32
 
-Source code for this board: https://gitee.com/Kevincoooool/xiaozhi-esp32/tree/yuying_3.13_lcd
+Source code for this kit: https://gitee.com/Kevincoooool/xiaozhi-esp32/tree/yuying_3.13_lcd
 
-1. After flashing, reboot the board; it enters Wi-Fi provisioning mode.
+1. After flashing, reboot the device; it enters Wi-Fi provisioning mode.
 2. Connect your phone to the hotspot starting with `Xiaozhi`, open `192.168.4.1` in a browser and enter your Wi-Fi name and password.
 3. Once connected, open [xiaozhi.me](https://xiaozhi.me) on your computer and enter the verification code shown on the device to bind it.
 4. Say "你好小智" (Hi, Xiaozhi) to wake it up, or hold the Boot button and talk.
